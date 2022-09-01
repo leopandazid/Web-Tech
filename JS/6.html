@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 400px;
+            width: 500px;
+            border: 1px solid blue;
+            background-color: aquamarine;
+            display :flex;
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            flex-wrap: wrap;
+            
+        }
+        .item{
+            margin : 5px;
+            background-color: cadetblue;
+            flex:1; /* Flex grow */
+            
+        }
+        .item1{
+            margin : 5px;
+            background-color: cadetblue;
+            flex:0 1; /* Flex grow */
+        }
+        .item2{
+            margin : 5px;
+            background-color: cadetblue;
+            flex:2; /* Flex grow */
+        }
+        .item3{
+            margin : 5px;
+            background-color: cadetblue;
+            flex:3; /* Flex grow */
+        }
+        .item4{
+            margin : 5px;
+            background-color: cadetblue;
+            flex:3 50px; /*flex grow basis*/
+        }
+        .item5{
+            margin : 5px;
+            background-color: cadetblue;
+            flex:3 0 30px; /* Flex grow  - shrink basis */
+        }
+
+        @media screen and (max-width:600px) {
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- Flex creates a container that we use in a div 
+    -->
+    <div class="container">
+        <div class ="item">ABCD</div>
+        <div class ="item5">JKL</div>
+        <div class ="item2">DEF</div>
+        <div class ="item3">GHI</div>
+        <div class ="item4">ABCD</div>
+        <div class ="item5">JKL</div>
+        <div class ="item1">DEF</div>
+        <div class ="item4">GHI</div>
+        <div class ="item">ABCD</div>
+        <div class ="item5">JKL</div>
+        <div class ="item2">DEF</div>
+        <div class ="item3">GHI</div>
+        <div class ="item4">ABCD</div>
+        <div class ="item5">JKL</div>
+        <div class ="item1">DEF</div>
+        <div class ="item4">GHI</div>
+    </div>
+
+
+</body>
+
+</html>

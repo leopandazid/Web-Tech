@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        car={
+            name:"xyz",
+            age:10,
+        };
+        function car (name,age){ //constructor
+            this.name=name;
+            this.age=age;
+        }
+
+        const c= new car("sdvfbetsg",43); 
+        const c2= new car("sdvfbetsg",43); 
+        c.name= "h1";
+        c.age=10;
+
+        // prototype to add a variable which is not there in object initially
+        car.prototype.lname= "bceb";
+        // now lname is available in the obj
+        c.lname="fvruhvr";
+        document.write(c2.lname);
+
+
+
+
+    </script>
+</body>
+</html>

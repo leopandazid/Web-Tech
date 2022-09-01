@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+</head>
+<body>
+    <h1>Fill Registration Form</h1><hr>
+    <form method="post" action = "#" target ="_blank">
+        <fieldset>
+            <h1>Student Details</h1><br>
+            <legend>Personal Details</legend>
+             <!-- we use tag legend for forms -->
+
+            <label>First Name : </label>
+            <input name ="fname" type="text" required><br>
+            
+            <label>Last Name : </label>
+            <input name ="lname" type="text" required><br>
+
+            <label>Select Number : </label>
+            <input type="number" name="num1" min="1" max="10"><br>
+
+            <label>Date of Birth : </label>
+            <input type ="date" name="dob"><br>
+
+            <label>Favourite Color : </label>
+            <input type="color" name="fcolor"><br>
+
+            <label>Sports Interest : </label>
+            <input type="range" name="sports"><br>
+
+            <label>Email : </label>
+            <input type="email" name="email"><br>
+
+            <label>Time : </label>
+            <input type="time" name = "time"><br>
+
+            <label>Tel : </label>
+            <input type="tel" name="mobile" placeholder="10 digits" pattern="[0-9]{10}" required><br> 
+
+            <label>Introduce : </label>
+            <textarea type="textarea" name="describe-yourself" rows="10" cols="30" placeholder="Describe Yourself"></textarea><br>
+
+            <input type="submit" name="submit"> 
+        
+        </fieldset>   
+
+        <fieldset>
+            <legend>Student Interests </legend>
+            <h1>Student Interests</h1>
+
+            <label>Favourite Subject : </label>
+            <input type="radio" name="fav-sub" value="DDCO">DDCO<br>
+            <input type="radio" name="fav-sub" value="DSA">DSA<br>
+            <input type="radio" name="fav-sub" value="CN">CN<br>
+            <input type="radio" name="fav-sub" value="WEBT">WEBT<br>
+            <input type="radio" name="fav-sub" value="OS">OS<br>
+
+            <label>Favourite Programming Language : </label>
+            <input type="checkbox" name="fprogl" value="C">C<br>
+            <input type="checkbox" name="fprogl" value="C++">C++<br>
+            <input type="checkbox" name="fprogl" value="Python">Python<br>
+            <input type="checkbox" name="fprogl" value="Rust">Rust<br>
+            <input type="checkbox" name="fprogl" value="Java">Java<br>
+
+            <label >Select Favourite Area : </label>
+            <select>
+                <option >ML</option>
+                <option >AI</option>
+                <option >R&D</option>
+                <option >IOT</option>
+            </select><br>
+
+
+
+        </fieldset>
+    </form>
+
+
+    
+</body>
+</html>

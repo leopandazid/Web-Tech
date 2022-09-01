@@ -1,0 +1,89 @@
+<!-- Tables -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tables</title>
+</head>
+
+<body>
+    <h1>TABLES</h1>
+    <!-- 
+    Cellpadding
+        The "cellpadding" tag specifies (in pixels) the amount of space between the 
+        edges of each cell and the data inside each cell. Use it within the starting "table" 
+        tag.
+    Cellspacing
+        The "cellspacing" tag specifies (in pixels) the amount of space between each 
+        cell. Use it within the "table" tag
+    Alignment and Cell Padding
+        By default, all cell contents within a table (with the exception of table headings) 
+        align vertically centered and left justified.
+            For horizontal alignment, values can be left, right, or centre: 
+            Example: <tr align="centre">
+            For vertical alignment, values can be top, bottom, or middle: 
+            Example: <td valign="top">
+    
+    Cell Spanning
+        "Spanning" occurs when one cell spans two or more other cells in the table.
+        For column spanning, the tag <colspan=value> is placed within the <td> tag 
+        where it applies.
+    
+    
+    -->
+
+    <table border="1px" cellpadding="5" cellspacing="5">
+        <!-- Caption tag is used to center the table heading     -->
+        <caption>Table to Demonstrate</caption>
+        <!-- table head goes at the top of the table -->
+        <thead>Hello</thead>
+        <!-- 
+        tr is for table row 
+        td is for table data -->
+        <tr>
+            <th>row - 1</th>
+            <td>Row 1 Col 1</td>
+            <td>Row 2 Col 1</td>
+        </tr>
+        <tr>
+            <th>row - 2</th>
+            <td>Row 1 Col 2</td>
+            <td>Row 2 Col 2</td>
+        </tr>
+        <tr>
+            <th>row - 3</th>
+            <td>Row 1 Col 3</td>
+            <td>Row 2 Col 3</td>
+        </tr>
+        <!-- <tfoot>Bye</tfoot> -->
+
+    </table>
+    <table border=1>
+        <tr>
+            <td colspan=2>This cell spans over two columns </td>
+            <td>This cell spans over one column </td>
+        </tr>
+        <tr align="centre">
+            <td>A </td>
+            <td>B </td>
+            <td>C </td>
+        </tr>
+    </table>
+    For row spanning, the tag <rowspan=2> is placed within the <td> tag where
+            it applies. For example:
+            <table border=1>
+                <tr>
+                    <td rowspan=2>This cell spans over two rows </td>
+                    <td>A</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>D</td>
+                </tr>
+            </table>
+
+</body>
+
+</html>

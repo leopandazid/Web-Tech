@@ -1,0 +1,52 @@
+/* external css */
+
+/* universal selector */
+*{ 
+    background-color:black;
+}
+
+body{
+    background-color: black;
+}
+p{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+h2{
+    color:rgb(81, 81, 236);
+    text-align: right;
+    
+}
+
+/* Grouping Selector */
+h1,h2{
+    text-align: center;
+    color:antiquewhite;
+}
+
+/* put . for class 
+
+class can be used for any number of tags
+*/
+.para{
+    padding: 2px;
+    background-color: blue;
+    color:aliceblue
+}
+
+/* class selector */
+.center{
+    text-align: center;
+}
+
+/* put # for id 
+
+id should be used for one tag
+id is used pref once
+*/
+/* id selector */
+#id1{
+    padding: 3px;
+}

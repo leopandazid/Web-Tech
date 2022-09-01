@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Enter your details</h1>
+
+    <form method="get" action="survey.php" target="_blank"><!--Form - Form submitted ppage in next page (target= "_blank")-->
+        <label>First Name</label>
+        <input type ="text" name="fname" value="shreya" placeholder="First Name"><br>
+        <label>Last Name</label>
+        <input type ="text" name="lname" placeholder="Last Name"><br>
+        <input type="tel" name="phone" placeholder="phone no" pattern="[0-9]{10}">
+        <label>Email</label>
+        <input type ="email" name="email" placeholder="Email"><br><!--name is for the server-->
+        <label>Semester</label><br>
+        <input type = "radio" name="sem" value="1">Sem 1<br>
+        <input type = "radio" name="sem" value="2">Sem 2<br>
+        <input type = "radio" name="sem" value="3">Sem 3<br>
+        <input type = "radio" name="sem" value="4">Sem 4<br>
+        <input type = "radio" name="sem" value="5">Sem 5<br>
+        <input type = "radio" name="sem" value="6">Sem 6<br>
+        <label>Favourite Subject</label><br>
+        <input type="checkbox" name="fav-subject" value="DDCO">DDCO<br>
+        <input type="checkbox" name="fav-subject" value="C">C<br>
+        <input type="checkbox" name="fav-subject" value="Python">Python<br>
+        <input type="checkbox" name="fav-subject" value="Web-tech">Web-tech<br>
+        <input type="checkbox" name="fav-subject" value="AFLL">AFLL<br>
+
+        <!-- <label>College</label> -->
+        <!-- <input type="" > -->
+
+        <input type="submit" value="FORM" ><br>
+
+    </form>
+
+    <script>
+
+
+    </script>
+    
+</body>
+</html>

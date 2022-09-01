@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x= parseInt(4);
+        var y= parseFloat(5.5);
+        var cur_date = new Date(); //shows current dateand time
+        document.write(cur_date);
+        document.write(cur_date.getDate());
+        document.write(cur_date.getDay());
+
+        // strings
+        var x="hello"
+        document.write(x.toUpperCase());
+        document.write(x.toLowerCase());
+        document.write(x.charAt(2))
+        var y="world is"
+        document.write(x.concat(y))
+        var k= y.split();
+        document.write(k);
+        console.log(x.substring(2,4));
+
+        var em= [1,2,3]
+        em.push (4); // pushes in front
+        em.length // gets length
+        em.sort() // works only for single digit numbers
+        // works fine with strings
+        // for 2 digit number it gives the array with comparision on basis of first digit
+        // em= [11,2,13,4,45]
+        // em.sort() give [11,13,2,4,45]
+
+        var arr=[11,13,2,45,23,55] 
+        function asc(a,b){
+            return a-b;
+
+        }
+        function desc(a,b){
+            return b-a;
+        }
+        arr.sort(asc); 
+        console.log(arr.sort()); // [11, 13, 2, 23, 45, 55]
+        console.log(arr.sort(asc)); // [2, 11, 13, 23, 45, 55]
+        console.log(arr.sort(desc));
+
+
+
+    </script>
+</body>
+</html>

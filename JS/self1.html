@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Javascript Array Functions</p>
+    <script>
+        var hodgepodge=[1,["Shreya",20],30];
+        console.log(hodgepodge);
+        console.log(hodgepodge[1]);
+        console.log(["a","b","c","d"].reverse());
+
+        var arr=[];
+        arr.push(1,2,3,4,5,6);
+        console.log(arr);
+        
+        var remove=arr.pop(3);
+        console.log(arr);
+        console.log(remove);
+
+        // shift removes an element from the front of the array
+        var names= ["Shreya","Siri","Raksha","Shreeja","Pragya"];
+        var first = names.shift();
+        console.log(names);
+        console.log(first);
+        console.log (names.length);
+        
+        names.unshift("Shreya","Trisha","Kriika");
+        console.log (names);
+
+        function func(a) {
+            a= a+10;
+            return a;
+        }
+        var a= func(20);
+        console.log(a);
+
+        var ab= 10;
+        let b= function func1(ab) {
+            ab+=70;            
+        }
+        console.log(b);
+        console.log(ab);
+
+
+        let c= (a,b)=> {
+            return a*b;
+        }
+        console.log(c);
+
+
+        const param1=true;
+        const param2=false;
+
+        function twoParams(param1, param2){ 
+            console.log(param1, param2);
+        }
+
+        
+        console.log(x);
+        // undefined
+        var x=10;
+
+        // ReferenceError: y is not defined
+        // console.log (y);
+        // y=100;
+
+        // let y = 1; 
+        // let y = 2;
+        // console.log(y);
+        // OutputUncaught SyntaxError: Identifier 'y' has already beendeclared.
+
+
+        document.write("hello world <br>");
+        window.document.write("Bored<br>");
+        document.write("hello world <br>");
+
+        window.status = "this is a test";
+        status = "this is a test";
+        console.log(status);
+
+        var name = "hello"; 
+        alert( name.toUpperCase() );
+        // It should be noted that none methods belonging to string objects never change 
+        // the string's value, but they may return a new String object,.Array objectsSince  
+        // Arrays  are  rather  an  important  topic  in  the  own  right,  Array  objects  
+        // are given  their  own  section  at  the  end  of  this  unit  although  you  may  
+        // wish  to  skip ahead  to  read  that  section  now to  help  your  understanding  of  object  with  
+        // this more familiar example.Function objectsFunctions  are  of  the  type  
+        // Function,  and  can  be  treated  as  data  variables  or properties, or they can be 
+        // treated as sub-programmes and executed using the () operator.Math objectsThe  Math  
+        // object  provides  a  number  of  useful  methods  and  properties  for mathematical processing. 
+        // For example, Math provides the following property:Math.PIthat is useful for many geometric calculations.
+        // An example of some other methods provided by the Math object include:
+        // Math.abs();Math.round();Math.max( n1, n2);
+        confirm (name);
+        document.write( "<p>PI is " + Math.PI );
+        document.write( "<p>The signlessmagnitudes of the numbers -17 and 7 are " + Math.abs( -17 ) + " and " + Math.abs( 7 ) );
+        document.write( "<p>The interger part of 4.25 is " + Math.round( 4.25) ); 
+        document.write( "<p>The larger of 17 and 19 is " + Math.max(17, 19) );
+
+        function sayHi() {
+            alert('Hello');
+        }
+        setTimeout(sayHi, 1000);
+
+        function sayHi(phrase, who) {
+            alert( phrase + ', ' + who );
+        }
+        // Hello, John
+        setTimeout(sayHi, 1000, "Hello", "John"); 
+        setTimeout("alert('Hello')", 1000);
+        // But using strings is not recommended, use arrow functions instead of them, like this:
+        setTimeout(() => alert('Hello'), 1000);
+
+        // In  the  code  below,  we  schedule  the  function  and  then  cancel  it  (changed  our mind). 
+        // As a result, nothing happens:
+        let timerId = setTimeout(() => alert("never happens"), 1000);alert(timerId);
+        // timeridentifier
+        clearTimeout(timerId);
+        alert(timerId); // same identifier (doesn't become null after canceling)
+
+
+
+    </script>
+    
+</body>
+</html>

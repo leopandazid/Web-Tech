@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>
+webpage
+</title>
+</head>
+<body>
+<h1> list of veggies </h1>
+<ol>
+<li>carrot</li>
+<li>brinjal</li>
+<li>onion</li>
+</ol>
+<h1>list of fruits</h1>
+<ul>
+<li>apple</li>
+<li>grapes</li>
+<li>cherry</li>
+</ul>
+</body>
+</html>
