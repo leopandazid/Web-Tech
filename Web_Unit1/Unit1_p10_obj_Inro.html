@@ -4,13 +4,13 @@
 		// JavaScript Objects
 		
 		// Method 1 : Object Literals
-		/*let item = {name:"Reebok", price:"Rs. 2000", av_qty:20};
-		document.write(item.name+" "+item.price+"<br/>");
-		item.show=function(){
-			document.write(this.name+" "+this.price+" "+this.av_qty+"<br/>");
-		};
-		item.show();
-		*/
+		// let item = {name:"Reebok", price:"Rs. 2000", av_qty:20};
+		// document.write(item.name+" "+item.price+"<br/>");
+		// item.show=function(){
+		// 	document.write(this.name+" "+this.price+" "+this.av_qty+"<br/>");
+		// };
+		// item.show();
+		
 		// Method 2 : Object Constructors
 		function item(name, price, av_qty){
 			this.name = name;
@@ -26,7 +26,7 @@
 		
 		//item2.show();
 		
-		item.prototype.show = function(){
+		item.prototype.show = function(){ // to add a property
 			document.write(this.name+" "+this.price+" "+this.av_qty+"<br/>");
 		}
 		item1.show();
