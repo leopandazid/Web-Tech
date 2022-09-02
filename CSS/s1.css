@@ -26,14 +26,32 @@ h1,h2{
     color:antiquewhite;
 }
 
+.div{
+    margin:20px 20px 20px 20px;
+    /* padding:20px 20px 20px 20px; */
+
+    padding: 25px 50px 75px 100px;
+/* top padding is 25px
+right padding is 50px
+bottom padding is 75px
+left padding is 100px */
+
+    color: aliceblue;
+}
+
 /* put . for class 
 
 class can be used for any number of tags
 */
 .para{
-    padding: 2px;
+    padding: 20px;
     background-color: blue;
     color:aliceblue
+}
+
+.hello:hover{
+    background-color: black;
+    color:aqua;
 }
 
 /* class selector */
@@ -47,6 +65,9 @@ id should be used for one tag
 id is used pref once
 */
 /* id selector */
+
 #id1{
-    padding: 3px;
+    /* padding: 30px; */
+    color:aquamarine;
+    background-color: brown;
 }

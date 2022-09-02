@@ -33,7 +33,7 @@
     
     -->
 
-    <table border="1px" cellpadding="5" cellspacing="5">
+    <table border="1px" cellpadding="20" cellspacing="5">
         <!-- Caption tag is used to center the table heading     -->
         <caption>Table to Demonstrate</caption>
         <!-- table head goes at the top of the table -->
@@ -61,26 +61,84 @@
     </table>
     <table border=1>
         <tr>
-            <td colspan=2>This cell spans over two columns </td>
+            <td colspan=3>This cell spans over three columns </td>
             <td>This cell spans over one column </td>
         </tr>
-        <tr align="centre">
+        <tr align="center">
             <td>A </td>
+            <td>B </td>
+            <td>B </td>
+            <td>C </td>
+        </tr>
+        <tr align="center">
+            <td>A </td>
+            <td>B </td>
+            <td>B </td>
+            <td>C </td>
+        </tr>
+        <tr align="center">
+            <td>A </td>
+            <td>B </td>
+            <td>B </td>
+            <td>C </td>
+        </tr>
+        <tr align="center">
+            <td>A </td>
+            <td>B </td>
             <td>B </td>
             <td>C </td>
         </tr>
     </table>
     For row spanning, the tag <rowspan=2> is placed within the <td> tag where
             it applies. For example:
-            <table border=1>
+            <table border=1 cellpadding="10">
                 <tr>
-                    <td rowspan=2>This cell spans over two rows </td>
+                    <th rowspan=2>This cell spans over two rows </th>
                     <td>A</td>
                     <td>B</td>
                 </tr>
                 <tr>
                     <td>C</td>
                     <td>D</td>
+                </tr>
+            </table>
+
+            <table border="1" cellpadding="20" >
+                <tr>
+                    <th rowspan="2">Shreya</th>
+                    <td>PES1UG21CS574</td>
+                </tr>
+                <tr>
+                    <td>PES1UG21CS574</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Adrija</th>
+                    <td>PES1UG21Cs063</td>
+                </tr>
+                <tr>
+                    <td>PES1UG21Cs063</td>
+                </tr>
+            </table>
+
+            <table border ="1" cellpadding="20">
+                <tr>
+                    <th colspan="2">Name</th>
+                    <th>SRN</th>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td>Last Name</td>
+
+                </tr>
+                <tr>
+                    <td>Shreya</td>
+                    <td>Mishra</td>
+                    <td>PES234567</td>
+                </tr>
+                <tr>
+                    <td>Adrija</td>
+                    <td>Banerjeee</td>
+                    <td>PES234567</td>
                 </tr>
             </table>
 
