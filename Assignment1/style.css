@@ -1,0 +1,59 @@
+table{
+    border: 9px outset rgb(135, 125, 125)  ; 
+    width: 40%; 
+    background-color: white;  
+    margin: auto;
+}
+
+th{
+    border: 1px solid black;   
+    text-align: center; 
+}
+td
+{
+    border: 1px solid black; 
+    text-align: center;   
+}
+h2{
+    text-align: center;
+}
+body{
+    background-color:  #05c46b;
+}
+.container{
+    width: 400px;
+    background-color: white;
+    text-align: left;
+    margin: auto;
+    padding: 12px;
+    
+}
+
+input[type=number]{
+    width: 395px;
+}
+
+button {
+    background-color: #05c46b;
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 21px;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#course{
+    width: 380px;
+}
+
+.image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+    background-color: #05c46b;
+}

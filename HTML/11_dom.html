@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus sit esse vitae. Tenetur illum cum laboriosam sit rem dolorum id ipsam, assumenda magni, autem error ea animi maiores quisquam culpa.
+    </p>
+    <button id="btn">Click me to see 3 effects at one click</button>
+    <script>
+        document.getElementById("btn").addEventListener("click",change);
+        document.getElementById("btn").addEventListener("click",change1);
+        document.getElementById("btn").addEventListener("click",change2);
+        function change(){
+            document.getElementById("demo").style.backgroundColor="lightblue";
+        }
+        function change1(){
+            document.getElementById("demo").style.border="1px solid black";
+        }
+        function change2(){
+            document.getElementById("demo").innerHTML="Avengers";
+        }
+    </script>
+</body>
+</html>

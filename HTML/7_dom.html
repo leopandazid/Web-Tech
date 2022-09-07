@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id ="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ea ex reprehenderit! Quas quis inventore atque veniam iure cupiditate ipsam autem sequi incidunt? Et dolore sint nostrum sequi eum omnis!</p>
+    <button onclick="func()">Click to Change color</button>
+    <p id="toggle" style="color:orange">
+        Click to see toggle effect <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum hic cupiditate distinctio? Vero cumque dignissimos nesciunt nobis. Sunt eos alias hic exercitationem ex mollitia, accusantium tenetur perferendis aperiam minus iure!
+    </p>
+    <button onclick="func1()">Click to see toggling</button>
+    <script>
+        function func(){
+            document.getElementById("demo").style.backgroundColor= "orange";
+        }
+        
+        var a= document.getElementById("toggle").style.color;
+        var b="green"
+        function func1(){
+            document.getElementById("toggle").style.color= b;
+            let temp=b;
+            b=a;
+            a=b;
+        }
+    </script>
+</body>
+
+</html>

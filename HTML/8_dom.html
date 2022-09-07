@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">
+        Click on the para  <br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur rem consequuntur incidunt repudiandae minus accusantium cupiditate aliquid? Possimus error beatae molestiae modi hic? Perferendis, quod doloribus sint quae aut ut.
+    </p>
+    <button id="btn">Try-here</button> 
+    <!-- button to handle two events at a time -->
+    <script>
+        document.getElementById("demo").addEventListener("click",change);
+        document.getElementById("btn").addEventListener("click",change);
+        document.getElementById("btn").addEventListener("click",changeText);
+        function changeText(){
+            document.getElementById("demo").innerText= "Coldplay"
+        }
+        function change(){
+            document.getElementById("demo").style.backgroundColor="yellow";
+
+        }
+        document.getElementById("demo").addEventListener("mouseover",change1);
+        document.getElementById("demo").addEventListener("mouseout",change2);
+        function change1(){
+            document.getElementById("demo").style.backgroundColor="orange";
+        }
+        
+        function change2(){
+            document.getElementById("demo").style.backgroundColor="lightblue";
+        }
+
+    </script>
+    
+</body>
+</html>
