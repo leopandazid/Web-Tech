@@ -1,0 +1,9 @@
+<html>
+<body>
+<p class="example">WEB Tech</p>
+<p class="example">DS</p>
+<script>
+document.querySelectorAll(".example").style.color="blue";
+</script>
+</body>
+</html>

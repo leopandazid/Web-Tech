@@ -1,0 +1,7 @@
+<html>
+<body>
+<svg width="200" height="200">
+<circle cx="150" cy="150" r="40" stroke="green" stroke-width="4" fill="yellow">
+</svg>
+</body>
+</html>

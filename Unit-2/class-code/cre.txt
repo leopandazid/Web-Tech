@@ -1,0 +1,10 @@
+<html>
+<body>
+<p>Web Tech-</p>
+<script>
+const para=document.CreateElement("p");
+para.innerText="This is a Web Class";
+document.body.appendChild(para);
+</script>
+</body>
+</html>

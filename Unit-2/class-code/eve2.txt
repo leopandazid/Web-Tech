@@ -1,0 +1,11 @@
+<html>
+<body>
+<p>Hello PES</p>
+<script>
+document.getElementsByTagsName("p").addEventListener("click",fun);
+function fun(){
+document.getElementByTagsName("p").innerHTML="Hello world";
+}
+</script>
+</body>
+</html>

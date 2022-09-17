@@ -1,0 +1,23 @@
+<html>
+<body>
+<p id="demo">Hello world</p>
+<p id="demo1">WEB TECH</p>
+<h1 onmouseover="mouseevent()">AFLL</h1>
+<script>
+function mouseevent(){
+document.getElementsByTagName("h1")[0].style.color="green";
+}
+function cl(){
+document.getElementById("demo").innerHTML="Hello PES";
+}
+function bg(){
+document.getElementById("demo1").style.backgroundColor="yellow";
+}
+</script>
+<form>
+<input type="button" onclick="cl()" value="change-text">
+<input type="button" onclick="bg()" value="change-bg">
+</form>
+</body>
+</html>
+

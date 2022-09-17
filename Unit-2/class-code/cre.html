@@ -1,0 +1,28 @@
+<html>
+<body>
+<p id="demo">Web Tech-</p>
+<p id="demo1">Web Tech-</p>
+<script>
+const para=document.createElement("p");
+para.innerText="This is a Web Class";
+document.body.appendChild(para);
+
+const para1=document.createElement("p");
+para1.innerText="This is a Web Develop Class";
+document.getElementById("demo").appendChild(para1);
+
+const btn = document.createElement("button");
+btn.innerHTML = "Hello Button";
+document.body.appendChild(btn);
+
+var x = document.createElement("p");
+var t =document.createTextNode("Paragraph is created.");
+x.appendChild(t);
+document.getElementById("demo1").appendChild(x);
+
+//const element = document.getElementById("demo");
+  //element.remove();
+
+</script>
+</body>
+</html>

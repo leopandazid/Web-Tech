@@ -1,0 +1,31 @@
+<html>
+<body>
+<p id="demo">Hello World</p>
+<button id="demo1">Hello PES</button>
+<script>
+document.getElementById("demo").addEventListener("mouseover",col);
+function col(){
+document.getElementById("demo").style.color="red";
+}
+document.getElementById("demo").addEventListener("mouseout",colr);
+function colr(){
+document.getElementById("demo").style.color="green";
+}
+
+document.getElementById("demo1").addEventListener("click",onch);
+function onch(){
+document.getElementById("demo").style.border="1px solid black";
+}
+
+document.getElementById("demo1").addEventListener("click",cre);
+
+function cre(){
+const para=document.createElement("p");
+para.innerText="This is a Web Class";
+document.getElementById("demo").appendChild(para);
+}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>demo</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo1">Hello World</p>
+<p class="test">welcome to CSE</p>
+<p class="test">Welcome to PES</p>
+<script>
+document.getElementById("demo").innerHTML="HELLO PES";
+document.getElementById("demo1").innerHTML="HELLO PES University";
+document.getElementsByClassName("test")[0].innerHTML="Welcome to WEB develop";
+document.getElementsByClassName("test")[1].innerHTML="helps in developing webpage;
+</script>
+</body>
+</html>
+

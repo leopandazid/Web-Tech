@@ -1,0 +1,15 @@
+<html>
+<body>
+<p id="demo">Hello world</p>
+<p id="demo1"></p>
+<h1 class="test">Web Tech</h1>
+<h2 class="test">AFLL</h2>
+<script>
+document.getElementById("demo").innerHTML="Hello Pes";
+document.getElementById("demo1").innerHTML="Hello Pes";
+document.getElementsByClassName("test")[0].style.color="red";
+document.getElementsByClassName("test")[1].style.color="yellow";
+</script>
+</body>
+</html>
+

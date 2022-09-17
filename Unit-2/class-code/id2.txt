@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>id1</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo1">Welcome to CSE</p>
+<script>
+document.getElementById("demo").innerHTML="PES University";
+document.getElementById("demo1").innerHTML="WEB Tech";
+</script>
+</body>
+</html>

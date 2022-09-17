@@ -1,0 +1,31 @@
+<html>
+<body>
+<p id="demo">hello PES</p>
+<p class="test">welcome</p>
+<h1 id="demo2">welcome to CSE</h1>
+<h2 onmouseover="mouseoverevent()">PES UNIVERSITY</p>
+<script>
+function mouseoverevent()
+{
+document.getElementsByTagName("h2")[0].style.backgroundColor="yellow";
+}
+function cl(){
+document.getElementById("demo").style.backgroundColor="blue";
+document.getElementsByClassName("test")[0].innerHTML="welcome to PES";
+}
+function mo()
+{
+document.getElementById("demo2").style.color="green";
+}
+function focusevent()
+{
+document.getElementById("input1").style.background="pink";
+}
+</script>
+<form>
+<input type="text" id="input1" onfocus="focusevent()"> 
+<input type="button" onclick="cl()" value="change-background">
+<input type="button" onclick="mo()" value="changecolor">
+</form>
+</body>
+</html>

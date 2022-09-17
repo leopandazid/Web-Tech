@@ -1,0 +1,23 @@
+<html>
+<body>
+<canvas id="mycanvas" height="500" width="500"></canvas>
+<script>
+            var c = document.getElementById("mycanvas");
+            var cx = c.getContext("2d");
+            cx.beginPath();
+
+            cx.arc(100, 100, 90, 0, 2 * Math.PI);
+            cx.fillStyle="green";
+cx.fill();            
+cx.stroke();
+
+
+cx.rect(200,200,150,100);
+cx.fillStyle="blue";
+cx.fill();
+
+cx.font="30px Arial";
+cx.fillText("PES",300,400);
+        </script>
+</body>
+</html>

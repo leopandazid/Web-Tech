@@ -1,0 +1,11 @@
+<html>
+<body>
+<p id="demo">Hello World</p>
+<script>
+document.getElementById("demo").addEventListener(click,change);
+function change(){
+document.getElementById("demo").style.backgroundColor="green";
+}
+</script>
+</body>
+</html>

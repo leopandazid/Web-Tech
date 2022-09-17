@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<body>
+<p id="demo">Hello World</p>
+<button id="btn">click</button>
+<script>
+document.getElementById("btn").addEventListener("click",change);
+function change(){
+document.getElementById("demo").style.color="red";
+}
+</script>
+</body>
+</html>
+ 

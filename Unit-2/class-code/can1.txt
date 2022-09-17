@@ -1,0 +1,12 @@
+<html>
+<body>
+<canvas id="mycanvas" height="200" width="200"></canvas>
+<script>
+var c=documeny.getElementById("mycanvas");
+var cx=c.getContext("2d");
+cx.beginPath();
+cx.arc(100,100,90,0,2*MATH.PI);
+cx.stroke();
+</script>
+</body>
+</html>

@@ -12,6 +12,9 @@
 <body>
 
     <img src="PES-logo.png" alt="Error" class="image">
+    
+    <h2 class="logo">PES</h2>
+    <h6>University</h6>
     <h2>PES Student Count Information</h2>
     <table align="center">
         <tr>
@@ -49,14 +52,14 @@
 
     <h2> PES Survey Form</h2>
     <div class="container">
-        <form id="FORM" method="post" action="">
+        <form id="FORM" method="post" action="" onsubmit="alert_message()">
             <label for="Name">Name</label> <br>
             <input type="text" name="Name" placeholder="Enter your Name" required id="name" size="55"> <br> <br>
             <label for="EmailId">Email Id</label><br>
             <input type="text" name="Emailid" id="Email id" placeholder="Enter your email" required size="55"> <br>
             <br>
             <label for="Age">Age</label><br>
-            <input type="number" name="Age" placeholder="Enter your age" required size="75"> <br> <br>
+            <input type="number" name="Age" placeholder="Enter your age" min="0" max="100" required > <br> <br>
             <label for="des">Which option best describes you ?</label><br>
             <select name="course" id="course">
                 <option value="select"> Select Course</option>
@@ -71,13 +74,13 @@
                     Will you take up minor Courses?
                 </label><br>
                 <label>
-                    <input type="radio" name="min">Yes<br>
+                    <input type="radio" name="minor">Yes<br>
                 </label>
                 <label>
-                    <input type="radio" name="min">No<br>
+                    <input type="radio" name="minor">No<br>
                 </label>
                 <label>
-                    <input type="radio" name="min">Maybe 
+                    <input type="radio" name="minor">Maybe 
                 </label>
             </div><br>
 
@@ -99,24 +102,25 @@
                 <label>
                     Any comments or suggestions
                 </label><br>
-                <textarea placeholder="Enter your comment here" cols="51" rows="4"></textarea>
+                <textarea placeholder="Enter your comment here" cols="51" rows="5"></textarea>
             </div><br>
 
-            <button input type="submit" onclick="alert_message()" value="Submit">Submit</button>
-            <script>
-                function alert_message() {
-
-                    alert("Successfully Submitted")
-                }
-                function reset(){
-                    document.getElementById("FORM").reset();
-                }
-            </script>
-
+            <button type="submit"  value="Submit">Submit</button>
+            
             <button type="reset" value="reset" onclick="reset()">
                 Reset
             </button>
         </form>
-</body>
+    </body>
+    
+    <script>
+        function alert_message() {
+
+            alert("Successfully Submitted")
+        }
+        function reset(){
+            document.getElementById("FORM").reset();
+        }
+    </script>
 
 </html>

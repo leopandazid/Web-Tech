@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>Demo</title>
+</head>
+<body>
+<p id="demo">Hello World</p>
+<p id="demo1"></p>
+<script>
+document.getElementById("demo").innerHTML="HELLO PES";
+document.getElementById("demo1").innerHTML="WEB Tech";
+<script>
+</body>
+</html>

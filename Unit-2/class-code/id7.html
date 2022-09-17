@@ -1,0 +1,19 @@
+<html>
+<body>
+<p class="example">WEB Tech</p>
+<p class="example">DS</p>
+<h1 class="hello">Demo of query</h1>
+<h2 class="hello">Demo of all</h2>
+<script>
+var x=document.querySelectorAll(".example");
+for(var i=0;i<x.length;i++)
+{
+x[i].style.color="blue";
+}
+document.querySelectorAll(".example")[0].innerHTML="AFLL";
+document.querySelector(".hello").style.color="blue";
+//to select particular element
+document.querySelector("h2.hello").style.color="blue";
+</script>
+</body>
+</html>

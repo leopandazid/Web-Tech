@@ -1,0 +1,19 @@
+<html>
+<body>
+<p>this is a p element</p>
+<p>this is a p element</p>
+<h1 class="demo">demo</h1>
+<h2 class="demo">demo2</h2>
+<script>
+const x=document.querySelectorAll("p");
+for(var i=0;i<x.length;i++)
+{
+x[i].style.backgroundColor="red";
+}
+document.querySelectorAll(".demo")[0].style.backgroundColor="blue";
+document.querySelector(".demo").style.backgroundColor="yellow";
+document.querySelectorAll(".demo")[0].style.backgroundColor="blue";
+
+</script>
+</body>
+</html>

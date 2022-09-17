@@ -1,0 +1,100 @@
+<html>
+<body >
+<button id = "bt1">Click here!!</button>
+<p id = "demo"></p>
+<p>Something appears here on a doubleclick</p>
+<p id = "demo1">Click me</p><br>
+
+Field1:<input type = "text" id = "f1" value= "Hello world!!"><br>
+Field2:<input type = "text" id = "f2"><br><br>
+
+<button id = "bt2">Copy text</button><br>
+
+<img id = "img1" src = "smiley.jpg">
+
+<form name = "general">
+
+Keyboard: <input type = "text" id = "ky1"><br><br>
+Enter ur name : <input type = "text" id = "fname"><br><br>
+</form>
+
+<script>
+	 //doubleclick
+		var button = document.querySelector("#bt1");
+		button.addEventListener("dblclick",doSomething);
+			function doSomething(e){
+				document.getElementById("demo").innerHTML = "Hello, this is a doubleclick event fired"
+			}
+			 
+	//on doublclick copytext button the field1 value is copied to field 2
+	  
+	  var button = document.querySelector("#bt2");
+	  button.addEventListener("dblclick",myfunc);
+	  function myfunc(){
+		document.getElementById("f2").value = document.getElementById("f1").value
+	  }
+	  
+			
+	// mouse events- mouseout,mouseover,mouseup,mousedown	
+			var img1 = document.querySelector("#img1");
+			img1.addEventListener("mouseover",mOver);
+			img1.addEventListener("mouseout",mOut);
+			function mOver(){alert("Mouseover event is triggered..")}
+			function mOut(){alert("Mouseout event is triggered..")}
+			
+			var p = document.querySelector("#demo1");
+			p.addEventListener("mousedown",mDown);
+			p.addEventListener("mouseup",mUp);
+			function mDown(){
+				document.getElementById("demo1").innerHTML = "Mouse is held now.."
+			}
+			function mUp(){
+				document.getElementById("demo1").innerHTML = "Mouse is released now.."
+			}
+		
+					
+	// context menu
+			document.addEventListener("contextmenu",hidemenu);
+			function hidemenu(e){
+				e.preventDefault();
+			}
+			
+						
+	// screen X ,screen y & clientX ,clientY
+			
+			/*document.addEventListener("mousemove",mMove);
+			function mMove(e){
+				console.log("Mouse moved on the screen")
+				console.log(e.screenX+" "+e.screenY);
+			}*/
+			
+			document.addEventListener("mouseover",mOver);
+			function mOver(e){
+				//console.log("Mouse moved on the screen")
+				console.log(e.clientX+" "+e.clientY);
+			}
+			
+					
+			
+	// key events - keydown ,keyup, keypress
+			
+			var kd = document.querySelector("#ky1");
+			kd.addEventListener("keydown",kDown);
+			function kDown(){alert("Keydown event is triggered")}
+			
+			document.getElementById("fname").addEventListener("keyup",kUp);
+			function kUp(){
+				var x = document.getElementById("fname");
+				x.value = x.value.toUpperCase();
+			}
+			
+			window.addEventListener("keypress",keyPress)
+			function keyPress(e){
+				if(e.charCode===97){
+				
+				alert("Key A is pressed by user")}
+			}
+			
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<body>
+<p id="demo">Hello World</p>
+<button id="btn">click</button>
+<script>
+document.getElementById("btn").addEventListener("click",change);
+document.getElementById("btn").addEventListener("click",bgchange);
+function change(){
+document.getElementById("demo").style.color="red";
+}
+function bgchange(){
+document.getElementById("demo").style.border="5px solid black";
+}
+</script>
+</body>
+</html>
+ 

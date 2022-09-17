@@ -1,0 +1,13 @@
+<html>
+<body>
+<p id="demo">hello PES</p>
+<script>
+function cl(){
+document.getElementById("demo").style.backgroundColor="blue";
+}
+</script>
+<form>
+<input type="button" onclick="cl()" value="change">
+</form>
+</body>
+</html>

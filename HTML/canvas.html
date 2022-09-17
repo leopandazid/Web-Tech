@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="can" height="200" width="300" style="border: 10px solid green;">
+
+    </canvas>
+    <script>
+        var c = document.getElementById("can");
+        var ct=c.getContext("2d");
+        ct.moveTo(0,0);
+        ct.lineTo(100,100);
+        ct.stroke();
+
+        ct.rect(0,100,100,200)
+        ct.fillStyle="red";
+        ct.fill();
+        ct.stroke();
+    </script>
+</body>
+</html>

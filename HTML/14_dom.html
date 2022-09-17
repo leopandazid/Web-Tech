@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            flex:column;
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 20px;
+            
+        }
+        #grandparent{
+            background-color: black;
+        }
+        #parent{
+            background-color: blue;
+        }
+        #child{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>EVENT DELEGATION</h1>
+        In bubbling phase, the third parameter of addEventListener by default is false.
+        If the third parameter capture is true, then always the parent will be executed 
+        first and then the child will be executed.
+        This way is known as capturing phase.
+
+    </div>
+    <h1>Bubbling Phase</h1>
+
+    <div class="container" id="grandparent">
+        <div class="container" id="parent">
+            <div class="container" id="child">
+                CHILD
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var grandparent= document.getElementById("grandparent");
+        var parent= document.getElementById("parent");
+        var child= document.getElementById("child");
+
+        child.addEventListener("click",(e)=>{
+            console.log("child");
+        },{capture:true})
+
+        grandparent.addEventListener("click",(e1)=>{
+            console.log("grandparent");
+        },{capture:true})
+
+        parent.addEventListener("click",(e2)=>{
+            console.log("parent");
+        },{capture:true})
+
+    </script>
+
+    
+</body>
+</html>
+
