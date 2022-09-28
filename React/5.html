@@ -1,0 +1,34 @@
+<!-- With JSX you can write expressions inside curly braces { }.
+
+The expression can be a React variable, or property, or any other 
+valid JavaScript expression. JSX will execute the expression and return the result -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <div id="root2"></div>
+    <script  type="text/babel">  
+        const myElement = <h1>React is {5 + 5} times better with JSX</h1>;
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(myElement);
+        
+        // Close empty elements with />
+        const myElement1 = <input type="text" />;
+
+        const root1 = ReactDOM.createRoot(document.getElementById('root2'));
+        root1.render(myElement1);
+    </script>
+    
+</body>
+</html>

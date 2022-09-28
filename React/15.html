@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <!-- Internal CSS -->
+    <div id="root"></div>
+    <script  type="text/babel">  
+        function Letter(props){
+            var container= {
+                padding:"20px",
+                margin: "20px",
+                color:"black",
+                backgroundColor:props.bgcolor, // camel casing is used here 
+                display: "inline-block",
+            };
+
+            return (
+                <div style ={container} >
+                    {props.children}
+                </div>
+            );
+        }     
+        ReactDOM.render(
+            <>
+                <Letter bgcolor="pink">
+                    <p>A</p>
+                </Letter>
+                <Letter bgcolor="lightBlue">
+                    <p>E</p>
+                </Letter>
+                
+                <Letter bgcolor="lightGreen">
+                    <p>I</p>
+                </Letter>
+                <Letter bgcolor="violet">
+                    <p>O</p>
+                </Letter>
+                <Letter bgcolor="yellow">
+                    <p>U</p>
+                </Letter>
+            </>,
+            document.getElementById("root")
+        );
+    </script>
+    
+</body>
+</html>

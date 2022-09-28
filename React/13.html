@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <!-- Applying styles -->
+    <!-- Inline Style -->
+    <script  type="text/babel"> 
+        function Car(props){
+            return (
+                <div>
+                <h2 style={{color:"blue",backgroundColor:"yellow"}}>I am a Car</h2>
+                <p>My name is {props.name} and color is {props.color}</p>
+                <p>{props.children}</p>
+                </div>
+                );
+        }
+        ReactDOM.render(
+                        <>
+                        <Car name="kia" color="red" >
+                            <p> This is how to access he children</p>
+                            <p> This stays invisible until we write props.children in Car function </p>
+            
+                        </Car>
+                        <Car name="hello" color="bye">
+                            <p>hello</p>
+                        </Car>
+                        </>,
+                        document.getElementById("root"));
+
+    </script>
+    
+</body>
+</html>
