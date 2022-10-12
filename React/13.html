@@ -19,13 +19,14 @@
                 <div>
                 <h2 style={{color:"blue",backgroundColor:"yellow"}}>I am a Car</h2>
                 <p>My name is {props.name} and color is {props.color}</p>
-                <p>{props.children}</p>
+                <p>{props.children}</p><br />
                 </div>
                 );
         }
         ReactDOM.render(
                         <>
                         <Car name="kia" color="red" >
+                            <Car name="bedwue" color="dfvgf" />
                             <p> This is how to access he children</p>
                             <p> This stays invisible until we write props.children in Car function </p>
             

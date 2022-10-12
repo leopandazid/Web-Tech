@@ -1,32 +1,35 @@
 <html>
-	<head>
-		<title>React</title>
-		<script crossdomain src="https://unpkg.com/react@16/umd/react.development.js"> </script> 
-		<script crossdomain src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"> </script> 
-		<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"> </script>
-	</head>
-	<body>
-		<div id="container"></div>
-		<script type="text/babel">
-function Car(props){
-return(
-<div>
-<h1>Hello{props.name}</h1>
-<h1>hai{props.children}</h1>
-</div>
-);
-}
-ReactDOM.render(
-<div>
-<Car name="PES">
-<p>Anusha</p>
-<p>is a good girl</p>
-</Car>
-<Car name="Banglore">
-<p>Nihal</p>
-<p>is a good boy</p>
-</Car>
-</div>,document.getElementById("container"));
-</script>
+
+<head>
+	<title>React</title>
+	<script crossdomain src="https://unpkg.com/react@16/umd/react.development.js"> </script>
+	<script crossdomain src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"> </script>
+	<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"> </script>
+</head>
+
+<body>
+	<div id="container"></div>
+	<script type="text/babel">
+		function Car(props) {
+			return (
+				<div>
+					<h1>Hello{props.name}</h1>
+					<h1>hai{props.children}</h1>
+				</div>
+			);
+		}
+		ReactDOM.render(
+			<div>
+				<Car name="PES">
+					<p>Anusha</p>
+					<p>is a good girl</p>
+				</Car>
+				<Car name="Banglore">
+					<p>Nihal</p>
+					<p>is a good boy</p>
+				</Car>
+			</div>, document.getElementById("container"));
+	</script>
 </body>
+
 </html>

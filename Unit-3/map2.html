@@ -1,31 +1,34 @@
 <html>
-	<head>
-		<title>React</title>
-		<script crossdomain src="https://unpkg.com/react@16/umd/react.development.js"> </script> 
-		<script crossdomain src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"> </script> 
-		<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"> </script>
-	</head>
+
+<head>
+	<title>React</title>
+	<script crossdomain src="https://unpkg.com/react@16/umd/react.development.js"> </script>
+	<script crossdomain src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"> </script>
+	<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"> </script>
+</head>
+
 <body>
-<div id="root"></div>
-<script type="text/babel">
-function Name(props){
-const x=props.list;
-const listIt=x.map((y)=>
-<li key={y.id}>{y.name*y.name}</li>
-);
-return (
-<div>
-<h1>List of Squares</h1>
-<ul>{listIt}</ul>
-</div>
-);
-}
-const myList=[{name:5,id:1},
-{name:3,id:2},
-{name:6,id:3},
-{name:8,id:4},
-{name:9,id:5}];
-ReactDOM.render(<Name list={myList}/>,document.getElementById("root"));
-</script>
+	<div id="root"></div>
+	<script type="text/babel">
+		function Name(props) {
+			const x = props.list;
+			const listIt = x.map((y) =>
+				<li key={y.id}>{y.name * y.name}</li>
+			);
+			return (
+				<div>
+					<h1>List of Squares</h1>
+					<ul>{listIt}</ul>
+				</div>
+			);
+		}
+		const myList = [{ name: 5, id: 1 },
+		{ name: 3, id: 2 },
+		{ name: 6, id: 3 },
+		{ name: 8, id: 4 },
+		{ name: 9, id: 5 }];
+		ReactDOM.render(<Name list={myList} />, document.getElementById("root"));
+	</script>
 </body>
+
 </html>

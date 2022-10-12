@@ -17,7 +17,9 @@
         class QuantityInc extends React.Component{
             constructor(props){
                 super(props);
+                this.state={quantity:0};
                 this.quantityRef=React.createRef();
+                // this.quantityRef.current.value=0;
             }
             increQ=()=>{
                 this.quantityRef.current.value++;

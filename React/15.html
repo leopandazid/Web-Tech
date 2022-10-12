@@ -14,7 +14,7 @@
     <div id="root"></div>
     <script  type="text/babel">  
         function Letter(props){
-            var container= {
+            const container= {
                 padding:"20px",
                 margin: "20px",
                 color:"black",
@@ -27,7 +27,22 @@
                     {props.children}
                 </div>
             );
-        }     
+        } 
+        function Words(props){
+            const container= {
+                padding:"20px",
+                margin: "20px",
+                color:"black",
+                backgroundColor:props.bgcolor, // camel casing is used here 
+                display: "inline-block",
+            };
+            return(
+                <div style={container}>
+                    {props.children}
+                </div>
+            );
+        }
+        
         ReactDOM.render(
             <>
                 <Letter bgcolor="pink">
@@ -46,6 +61,15 @@
                 <Letter bgcolor="yellow">
                     <p>U</p>
                 </Letter>
+                <Words bgcolor="pink">
+                    <p>tfuyguy</p>
+                </Words>
+                <Words bgcolor="yellow">
+                    <p>tfuygdvgkuy</p>
+                </Words>
+                <Words bgcolor="orange">
+                    <p>tuy</p>
+                </Words>
             </>,
             document.getElementById("root")
         );

@@ -16,11 +16,14 @@
                 this.state = { hello: "World!" };
             }
 
+            // What does it do??
             componentWillMount() {
                 console.log("componentWillMount()");
             }
 
-            componentDidMount() {
+            
+            componentDidMount() { //Mounting means putting elements into the DOM
+                // this func is called after the component is rendered
                 console.log("componentDidMount()");
             }
 
@@ -28,6 +31,8 @@
                 this.setState({ hello: "Geek!" });
             }
 
+            // called when a component gets updated, it has to re-render HTML to the dom, with the 
+            // new changes
             render() {
                 return (
                     <div>
@@ -38,15 +43,22 @@
                     </div>);
             }
 
+            // Updating is the next phase in the lifecycle is when a component is updated
+            // A component is updated whenever there is a change in the component's state or props
+
+            // return a Boolean value that specifies whether Reac should continue with the rendering or not
+            // default value is true
+            // if false - componentDidUpdate() and componentWillUpdate() functions are not executed
             shouldComponentUpdate(nextProps, nextState) {
                 console.log("shouldComponentUpdate()");
                 return true;
             }
 
+            // method is called if the component is going to be updated
             componentWillUpdate() {
                 console.log("componentWillUpdate()");
             }
-
+            // method is called after the component is updated in the DOM
             componentDidUpdate() {
                 console.log("componentDidUpdate()");
             }

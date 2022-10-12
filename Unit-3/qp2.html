@@ -1,31 +1,34 @@
 <html>
-	<head>
-		<title>React</title>
-		<script crossdomain src="https://unpkg.com/react@16/umd/react.development.js"> </script> 
-		<script crossdomain src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"> </script> 
-		<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"> </script>
-	</head>
+
+<head>
+	<title>React</title>
+	<script crossdomain src="https://unpkg.com/react@16/umd/react.development.js"> </script>
+	<script crossdomain src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"> </script>
+	<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"> </script>
+</head>
+
 <body>
-<div id="root"></div>
-<script type="text/babel">
- function Name(props){
-const listn=props.namelis.map((x)=>
-<li key={key}>{x.name*x.name}</li>
-);
-return(
-<div>
-<h2>Name list is</h2>
-<ul>{listn}</ul>
-</div>
-);
-}
-const namel=[{name:5,id:'a'},
-{name:6,id:'b'},
-{name:7,id:'r'},
-{name:8,id:'p'},
-{name:4,id:'u'}
-];
-ReactDOM.render(<Name namelis={namel}/>,document.getElementById("root"));
-</script>
+	<div id="root"></div>
+	<script type="text/babel">
+		function Name(props) {
+			const listn = props.namelis.map((x) =>
+				<li key={key}>{x.name * x.name}</li>
+			);
+			return (
+				<div>
+					<h2>Name list is</h2>
+					<ul>{listn}</ul>
+				</div>
+			);
+		}
+		const namel = [{ name: 5, id: 'a' },
+		{ name: 6, id: 'b' },
+		{ name: 7, id: 'r' },
+		{ name: 8, id: 'p' },
+		{ name: 4, id: 'u' }
+		];
+		ReactDOM.render(<Name namelis={namel} />, document.getElementById("root"));
+	</script>
 </body>
+
 </html>

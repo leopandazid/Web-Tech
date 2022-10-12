@@ -1,37 +1,42 @@
 <html>
-	<head>
-		<title>React</title>
-		<script crossdomain src="https://unpkg.com/react@16/umd/react.development.js"> </script> 
-		<script crossdomain src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"> </script> 
-		<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"> </script>
-	</head>
+
+<head>
+	<title>React</title>
+	<script crossdomain src="https://unpkg.com/react@16/umd/react.development.js"> </script>
+	<script crossdomain src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"> </script>
+	<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"> </script>
+</head>
+
 <body>
-<div id="root"></div>
-<script type="text/babel">
-class Form extends React.Component{
-constructor(props){
-super(props);
-this.state={
-username:' '
-}
-}
-handleU=(event)=>{
-this.setState({username:event.target.value})
-}
-handleSubmit=(event)=>{
-alert('A name was Submitted'+this.state.username);
-event.preventDefault();
-}
-render(){
-return(
-<form onSubmit={this.handleSubmit}>
-Name:<input type="text" value={this.state.username} onChange={this.handleU}/>
-<input type="submit" value="Submit"/>
-</form>
-);
-}
-}
-ReactDOM.render(<Form />,document.getElementById("root"));
-</script>
+	<div id="root"></div>
+	<script type="text/babel">
+		class Form extends React.Component {
+			constructor(props) {
+				super(props);
+				this.state = {
+					username: ' '
+				}
+			}
+			handleU = (event) => {
+				this.setState({ username: event.target.value })
+			}
+			handleSubmit = (event) => {
+				alert('A name was Submitted' + this.state.username);
+				event.preventDefault();
+			}
+			render() {
+				return (
+					<form onSubmit={this.handleSubmit}>
+						<p>{this.state.username}</p><br />
+						Name:<input type="text" value={this.state.username} onChange={this.handleU} />
+						<input type="text" placeholder="fav no" />
+						<input type="submit" value="Submit" />
+					</form>
+				);
+			}
+		}
+		ReactDOM.render(<Form />, document.getElementById("root"));
+	</script>
 </body>
+
 </html>
