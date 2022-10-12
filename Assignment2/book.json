@@ -1,0 +1,18 @@
+{
+    "bookstore": {
+        "book": [
+            {
+                "name": "Harry Potter",
+                "author": "J K Rowling",
+                "price": 450,
+                "category": "Fantasy"
+            },
+            {
+                "name": "Percy Jackson",
+                "author": "Rick Riordan",
+                "price": 450,
+                "category": "Fantasy"
+            }
+        ]
+    }
+}

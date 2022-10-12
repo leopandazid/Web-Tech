@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>React</title>
+		<script crossdomain src="https://unpkg.com/react@16/umd/react.development.js"> </script> 
+		<script crossdomain src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"> </script> 
+		<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"> </script>
+	</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+class Car extends React.Component{
+constructor(){
+super();
+this.state={
+name:"abc",
+color:"red"
+};
+}
+changeColor=()=>{
+this.setState({color:"blue"});
+}
+render(){
+return(
+<div>
+<h1>My {this.state.color}</h1>
+<button type="button" onClick={this.changeColor}>Change color</button>
+);
+}
+}
+ReactDOM.render(<Car />,document.getElementById("root"));
+</script>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script  type="text/babel">
+        class ResImage extends React.Component{
+            render(){
+                return (
+                    <>
+                    <img width="400" src={this.props.src}></img>
+                    </>
+                );
+            }
+
+        }
+
+        class ResLink extends React.Component{
+            render(){
+                return(
+                    <>
+                    <a href ={this.props.link}> {this.props.linktext}</a> <br/>
+                    </>
+                );
+            }
+        }
+
+        class ResCaption extends React.Component{
+            render(){
+                return (
+                    <>
+                    <p>{this.props.caption}</p>
+                    </>
+                );
+            }
+        }
+
+        class SrchResult extends React.Component{
+            render(){
+                return (
+                    <>
+                    <ResImage {...this.props} />
+                    <ResCaption {...this.props} />
+                    <ResLink {...this.props} />
+                    </>
+                );
+            }
+        }
+        ReactDOM.render(
+            <div>
+                <SrchResult src="https://cdn.britannica.com/40/75640-050-F894DD85/tiger-Siberian.jpg" link="https://www.facebook.com" linktext="facebook"  />
+                <SrchResult src="https://cdn.britannica.com/37/154237-050-A76A506D/blue-peafowl-tail-Indian-peacock-courtship-displays.jpg" link="https://www.twitter.com" linktext="twitter" />
+            </div>,
+            document.getElementById("root"));
+    </script>
+    
+</body>
+</html>

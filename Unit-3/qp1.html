@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>React</title>
+		<script crossdomain src="https://unpkg.com/react@16/umd/react.development.js"> </script> 
+		<script crossdomain src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"> </script> 
+		<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"> </script>
+	</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+function App(){
+const mySty={
+color:"pink",
+backgroundColor:"yellow"
+};
+return(
+<>
+<h1 style={{color:"green"}}>Hello PES</h1>
+<h1 style={{backgroundColor:"blue"}}>CSE</h1>
+<p style={mySty}>Hello style</p>
+</>
+);
+}
+ReactDOM.render(<App/>,document.getElementById('root'));
+</script>
+</body>
+</html>

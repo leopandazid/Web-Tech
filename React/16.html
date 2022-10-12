@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <!-- Changing states of the class Component -->
+    <script  type="text/babel">    
+        class Bike extends React.Component{
+            constructor(){
+                super();
+                this.state={name:"abc", version: "6", color:"red"};
+            }
+            changeVersion=()=>{ // only arrow func works in case of changing states
+                // we can change states only in class and not in function
+                this.setState({version:"10"});
+            }
+            changeName=()=>{
+                this.setState({name:"xyz"})
+            }
+            render(){
+                return (
+                    <>
+                        <h1>Bike name : {this.state.name}</h1>
+                        <h1>Bike Version : {this.state.version} </h1>
+                        <h1>{this.state.color}</h1>
+                        <button onClick={this.changeVersion}>click to change version </button>
+                        <button onClick={this.changeName}>click to change name </button>
+                    </>
+                );
+            }
+        }    
+        ReactDOM.render(<Bike />, document.getElementById("root"));
+    </script>
+    
+</body>
+</html>

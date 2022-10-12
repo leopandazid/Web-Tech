@@ -1,43 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WT assignment</title>
+    <script>
+
+    </script>
     <style>
-        .container{
-            flex:column;
-            background-color: #f1f1f1;
-            margin: 10px;
-            padding: 20px;
-            font-size: 20px;
-            
+        img {
+            float: left;
+            align-items: left;
+            margin-left: 10px;
+            margin-bottom: 5px;
+            border: solid black 1px;
+            padding: 2px
         }
-        #demo{
-            background-color: black;
-            width: 200px;
-            height: 200px;
-        }
-        #demo1{
-            background-color: white;
-            margin:50px;
-            border-style: double;
-               
+
+        div {
+            margin-left: 500px;
+            margin-right: 300px;
+            display: block;
+            text-align: left;
+            position: relative
         }
     </style>
 </head>
+
 <body>
-    <div id="demo" class="container">
-        <div id="demo1" class="container">
-
-        </div>
+    <img src="https://i.pinimg.com/originals/c2/b8/6e/c2b86e64ad90089ce0ab6796e9bf3a8e.jpg" height="400" width="400" style="overflow:auto">
+    <div>
+        <h1>Halo 2 video game</h1>
+        <p id="p1">Price $50.00</p>
+        <nav>
+            <a href="#">Write a review</a>|
+            <a href="#">Read all review</a>
+        </nav>
+        <svg height="110" width="50">
+            <polygon points="22,30 10,60 45,40 0,40 40,58" fill="yellow" />
+            Sorry, your browser does not support inline SVG.
+        </svg>
+        <svg height="110" width="70">
+            <polygon points="22,30 10,60 45,40 0,40 40,58" fill="yellow" />
+            Sorry, your browser does not support inline SVG.
+        </svg><svg height="110" width="70">
+            <polygon points="22,30 10,60 45,40 0,40 40,58" fill="yellow" />
+            Sorry, your browser does not support inline SVG.
+        </svg><svg height="110" width="70">
+            <polygon points="22,30 10,60 45,40 0,40 40,58" fill="yellow" />
+            Sorry, your browser does not support inline SVG.
+        </svg><svg height="110" width="70">
+            <polygon points="22,30 10,60 45,40 0,40 40,58" fill="grey" />
+            Sorry, your browser does not support inline SVG.
+        </svg>
+        <form action="post">
+            <textarea id="suggestions" name="suggestions" cols="50" rows="5"></textarea><br>
+            <h3 style="color:red">Only 9 left</h3>
+            <audio controls src="https://www.computerhope.com/jargon/m/example.mp3"></audio>
     </div>
-
     <script>
-
+        header = document.getElementsByTagName('h1')[0]
+        para = document.getElementById('p1')
+        para.addEventListener('click', function (e) {
+            e.target.style.color = "red"
+            e.target.style.fontSize = "50px"
+        }, true)
+        header.addEventListener('click', function () {
+            alert("the discount sale is going to end")
+        }, true)
 
     </script>
-    
 </body>
+
 </html>

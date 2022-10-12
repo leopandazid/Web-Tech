@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        #prod_image {
+            border: solid;
+            height: 300x;
+            width: 320px;
+            text-align: left;
+            border-color: lightgreen;
+            float: left;
+            margin-right: 25px;
+        }
+
+        #p {
+            text-align: justify;
+        }
+
+        #rating {
+            margin: 0px;
+            font-size: 25px;
+        }
+
+        #svg_stars {
+            margin: 0px;
+        }
+
+        #headers {
+            font-size: 25px;
+
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+       
+    </style>
+    <title>Halo 3</title>
+</head>
+
+<body>
+    <div id="prod_image">
+        <img src="https://bgr.com/wp-content/uploads/2020/05/halo-2.jpg?quality=70&strip=all" alt="Product image is missing" width="330" height="400 ">
+    </div>
+    <div id="headers">
+        <h2 id="game_title" style="margin-top:30px;margin-bottom:3px">Halo 3 Video Game</h2>
+        <p id="pricetag" style="margin:0px;font-size:20px">
+            Price: $50.00
+    </div>
+
+    </p>
+    <p id="p">
+    <div>
+        <svg id="svg_stars" style="width: 0; height: 0;;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+            <defs>
+                <mask id="half">
+                    <rect x="0" y="0" width="32" height="32" fill="white" />
+                    <rect x="50%" y="0" width="32" height="32" fill="grey" />
+                </mask>
+
+                <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="star">
+                    <path
+                        d="M31.547 12a.848.848 0 00-.677-.577l-9.427-1.376-4.224-8.532a.847.847 0 00-1.516 0l-4.218 8.534-9.427 1.355a.847.847 0 00-.467 1.467l6.823 6.664-1.612 9.375a.847.847 0 001.23.893l8.428-4.434 8.432 4.432a.847.847 0 001.229-.894l-1.615-9.373 6.822-6.665a.845.845 0 00.214-.869z" />
+                </symbol>
+            </defs>
+        </svg>
+    </div>
+
+    <p class="star-rating" aria-label="4.5 stars out of 5">
+        <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
+            <use xlink:href="#star"></use>
+            <use xlink:href="#star" fill="none" stroke="grey"></use>
+        </svg>
+        <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
+            <use xlink:href="#star"></use>
+            <use xlink:href="#star" fill="none" stroke="grey"></use>
+        </svg>
+        <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
+            <use xlink:href="#star"></use>
+            <use xlink:href="#star" fill="none" stroke="grey"></use>
+        </svg>
+        <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
+            <use xlink:href="#star"></use>
+            <use xlink:href="#star" fill="none" stroke="grey"></use>
+        </svg>
+        <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
+            <use xlink:href="#star" mask=url("#half")></use>
+            <use xlink:href="#star" fill="none" stroke="grey"></use>
+        </svg>
+    </p>
+    </p>
+    <audio controls src="Halo 3.mp3"></audio>
+    <br>
+    <video controls src="Halo3Trailer.mp4" style="height:200px"></video>
+    <script>
+        headers = document.getElementById("headers")
+        headers.addEventListener("click", function (e) {
+            alert("div element clicked")
+        }, { capture: true })
+        title = document.getElementById("game_title")
+        title.addEventListener('click', function (e) {
+            alert("Discount is going to end soon!")
+        }, { capture: true })
+        pt = document.getElementById("pricetag");
+        pricetag.addEventListener('click', function (e) {
+            e.target.style.color = "red";
+            e.target.style.fontSize = "30px";
+        }, { capture: true })
+    </script>
+</body>
+
+</html>
