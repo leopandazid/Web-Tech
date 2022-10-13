@@ -36,12 +36,12 @@
 				return (
 					<div>
 						<h1>this is about page{this.state.topic}</h1>
-						<App />
+						<App {...this.props} />
 					</div>
 				);
 			}
 		}
-		ReactDOM.render(<About />, document.getElementById("root"));
+		ReactDOM.render(<About brand="fdgb" color="fdgvbrht" topic="fvgbhsd" />, document.getElementById("root"));
 	</script>
 </body>
 
