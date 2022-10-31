@@ -20,8 +20,10 @@
           year: 1964
         };
       }
-      changeColor = () => {
+      changeColor = () => { // arrow func stored in another var
+        console.log(this); // we can use this without binding
         this.setState({ color: "blue" });
+        this.setState({year:this.state.year+1});
       }
       render() {
         return (
