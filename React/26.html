@@ -24,7 +24,7 @@
         class Parent extends React.Component {
             constructor(props, context) {
                 super(props, context);
-                this.doClick = event => {
+                this.doClick = (event) => {
                     this.inputText.focus();
                     console.log(this.inputText.value);
                     document.write(this.inputText.value);
