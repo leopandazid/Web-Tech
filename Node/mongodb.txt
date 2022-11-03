@@ -1,0 +1,100 @@
+MongoDB is a document(NoSQL) database. It stores data in a type of JSON format called BSON.
+has no schema.
+
+MongoDB is a document database with the scalability and flexibility 
+that you want with the querying and indexing that you need.
+
+A record in MongoDB is a document, which is a data structure composed of key value pairs similar 
+to the structure of JSON objects.
+
+MongoDB stores documents in collections. A collection is a group of MongoDB documents.
+
+MongoDB stores collections in databases.
+
+SQL vs Document Databases
+SQL databases are considered relational databases. They store related data in separate 
+tables. When data is needed, it is queried from multiple tables to join the data back 
+together.
+
+MongoDB is a document database which is often referred to as a non-relational database. This does not mean that relational data cannot be stored in document databases. It means that relational data is stored differently. A better way to refer to it is as a non-tabular database.
+
+MongoDB stores data in flexible documents. Instead of having multiple tables you can simply keep all of your related data together. This makes reading your data very fast.
+
+You can still have multiple groups of data too. In MongoDB, instead of tables these are called collections.
+
+you can see which database you are using by typing db in your terminal.
+To see which database you are using, in your terminal type db.
+To create a database, in your terminal type use database_name.
+Remember: In MongoDB, a database is not actually created until it gets content!
+
+To create a collection, in your terminal type db.createCollection("collection_name").
+eg- 
+db.createCollection("posts")
+
+To see which collections are in your database, in your terminal type show collections.
+
+To insert a document into a collection, in your terminal type db.collection_name.insert({key: value}).
+
+eg- 
+db.posts.insert({title: "Hello World", content: "This is my first post!"})
+
+insertOne()
+To insert a single document, use the insertOne() method.
+
+Note: If you try to insert documents into a collection that does not exist, MongoDB will create the collection automatically.
+
+insertMany()
+To insert multiple documents at once, use the insertMany() method.
+
+This method inserts an array of objects into the database.
+
+db.posts.insertMany([  
+  {
+    title: "Post Title 2",
+    body: "Body of post.",
+    category: "Event",
+    likes: 2,
+    tags: ["news", "events"],
+    date: Date()
+  },
+  {
+    title: "Post Title 3",
+    body: "Body of post.",
+    category: "Technology",
+    likes: 3,
+    tags: ["news", "events"],
+    date: Date()
+  },
+  {
+    title: "Post Title 4",
+    body: "Body of post.",
+    category: "Event",
+    likes: 4,
+    tags: ["news", "events"],
+    date: Date()
+  }
+])
+
+To see all the documents in a collection, in your terminal type db.collection_name.find().
+eg-
+db.posts.find()
+
+To see all the documents in a collection in a more readable format, in your terminal type db.collection_name.find().pretty().
+eg-
+db.posts.find().pretty()
+
+findOne()
+To select only one document, we can use the findOne() method.
+
+This method accepts a query object. If left empty, it will return the first document it finds.
+
+Note: This method only returns the first match it finds.
+
+To update a document in a collection, in your terminal type db.collection_name.update({key: value}, {key: value}).
+eg-
+db.posts.update({title: "Hello World"}, {title: "Hello World", content: "This is my first post!", author: "John"})
+
+To delete a document in a collection, in your terminal type db.collection_name.remove({key: value}).
+eg-
+db.posts.remove({title: "Hello World"})
+

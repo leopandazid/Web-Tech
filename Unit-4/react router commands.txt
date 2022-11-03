@@ -1,0 +1,8 @@
+set NODE_OPTIONS=--openssl-legacy-provider
+
+npx create-react-app student
+
+npm install --save styled-components
+
+npm install react-router-dom
+

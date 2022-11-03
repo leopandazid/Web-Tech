@@ -1,0 +1,10 @@
+var fs= require('fs')
+console.log("Going to open file");
+fs.open('demo1.html', 'r+',function(err,fd){
+    if(err){
+        return console.error(err);
+    }
+    var buf=Buffer.alloc(1024);
+    console.log("file Opened Sucessfully")
+    console.log("Going to truncate file after 3 bytes")
+fs.f
